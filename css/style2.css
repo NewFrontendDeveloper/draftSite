@@ -1,0 +1,56 @@
+@keyframes blink {
+    0%{color: black;}
+    50%{color: red;}
+    100%{color: black;}
+}
+
+body{
+    background-color: #333;
+}
+
+.product-container{
+    width: 400px;
+    height: 425px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    position: relative;
+    border-radius: 15px;
+    background: rgba(249,247,247,0.8);
+    backdrop-filter: blur(10px);
+}
+
+.product-img{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+}
+
+.product-description{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn{
+    background-color: #ed9908;
+    color:white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.add-to-cart-btn:hover{
+    background-color: #9908ed;
+}
+
+.product-price{
+    font-weight: bold;
+    font-size: 22px;
+    animation: blink 1s infinite;
+}
